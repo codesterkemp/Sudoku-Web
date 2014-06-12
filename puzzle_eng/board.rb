@@ -6,7 +6,8 @@ class board
 	def initialize(spaces) #size,zones
 		# @size = size
 		# @zones = zones
-		@spaces = spaces # should be in csv format loc,value,loc,value, ...etc
+		@spaces = spaces # should be an array of of spaces
+		spaces.each || space = Space.new
 	end
 
 	def space
